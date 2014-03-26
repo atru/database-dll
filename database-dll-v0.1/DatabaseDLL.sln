@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.3
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseDLL", "DatabaseDLL.csproj", "{D930A5A0-6F76-4AB1-ACDD-35CD74608DB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D930A5A0-6F76-4AB1-ACDD-35CD74608DB8}.Debug|x86.Build.0 = Debug|x86
+		{D930A5A0-6F76-4AB1-ACDD-35CD74608DB8}.Debug|x86.ActiveCfg = Debug|x86
+		{D930A5A0-6F76-4AB1-ACDD-35CD74608DB8}.Release|x86.Build.0 = Release|x86
+		{D930A5A0-6F76-4AB1-ACDD-35CD74608DB8}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal
