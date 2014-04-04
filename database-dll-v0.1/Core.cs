@@ -45,20 +45,20 @@ public class Concatenate : IBinarySerialize
     /// </summary>
     public void Init()
     {
-        this.intermediateResult = new StringBuilder();
-        this.delim = String.Empty;
+        intermediateResult = new StringBuilder();
+        delim = String.Empty;
     }
 
     /// <summary>
     /// Accumulate the next value, not if the value is null
     /// </summary>
     /// <param name="value">single value</param>
-    /// <param name="delim">deliminator between values in the result</param>
-    public void Accumulate(SqlString value, SqlString delim)
+    /// <param name="delimiter">delimiter between values in the result</param>
+    public void Accumulate(SqlString value, SqlString delimiter)
     {
     	if (value.IsNull) return;
-        delim = delim.IsNull ? "," : delim.Value;
-        this.intermediateResult.Append(value.Value).Append(delim);
+        delim = delimiter.IsNull ? "," : delimiter.Value;
+        intermediateResult.Append(value.Value).Append(delim);
     }
 
     /// <summary>
@@ -67,8 +67,8 @@ public class Concatenate : IBinarySerialize
     /// <param name="other">partially computed aggregate</param>
     public void Merge(Concatenate other)
     {
-        this.intermediateResult.Append(other.intermediateResult);
-		this.delim=other.delim;
+        intermediateResult.Append(other.intermediateResult);
+        delim = other.delim;
     }
 
     /// <summary>
@@ -82,7 +82,7 @@ public class Concatenate : IBinarySerialize
         if (this.intermediateResult != null
             && this.intermediateResult.Length > 0)
         {
-        	output = this.intermediateResult.ToString(0, this.intermediateResult.Length-delim.Length);
+        	output = this.intermediateResult.ToString(0, this.intermediateResult.Length-this.delim.Length);
         }
         return new SqlString(output);
     }
@@ -101,9 +101,9 @@ public class Concatenate : IBinarySerialize
     /// </summary>
     public void Write(BinaryWriter w)
     {
-    	w.Write(this.intermediateResult.ToString());
+    	w.Write(intermediateResult.ToString());
     	//write deliminator in case of multithreading ??
-    	w.Write(delim);
+    	w.Write(delim.ToString());
     }
 }
 
