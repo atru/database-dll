@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.3
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenZipDB", "SevenZipDB.csproj", "{DC7529E5-AE94-416F-8D9D-0DA1645C32D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenZip", "..\SevenZip\SevenZip.csproj", "{4960DD14-3431-47EC-B9D9-9D2730A98DC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC7529E5-AE94-416F-8D9D-0DA1645C32D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7529E5-AE94-416F-8D9D-0DA1645C32D5}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7529E5-AE94-416F-8D9D-0DA1645C32D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7529E5-AE94-416F-8D9D-0DA1645C32D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4960DD14-3431-47EC-B9D9-9D2730A98DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4960DD14-3431-47EC-B9D9-9D2730A98DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4960DD14-3431-47EC-B9D9-9D2730A98DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4960DD14-3431-47EC-B9D9-9D2730A98DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
