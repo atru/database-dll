@@ -4,10 +4,11 @@ database-dll
 This repo contains the following projects of DLLs for MS SQL:
 
 1. database-dll implements several userful functions, such as:
-   * aggregate concatenation
-   * regular expressions
-   * simple working with arrays
-   * ISNUMERIC() alternative
+  * aggregate concatenation
+  * regular expressions
+  * guessing schema by query
+  * ISNUMERIC() alternative
+  * simple working with arrays
 1. 7zip-dll allows archiving strings using the [open-source 7zip][7zip]
 
 Compatibility
