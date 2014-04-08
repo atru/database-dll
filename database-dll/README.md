@@ -5,8 +5,9 @@ MS SQL Server DLL for CLR is a .NET (C#) project which implements several userfu
 
 * aggregate concatenation
 * regular expressions
-* simple working with arrays
+* guessing schema by query
 * ISNUMERIC() alternative
+* simple working with arrays
 
 You can download a compiled version of the library, or the project itself to check things out.
 
