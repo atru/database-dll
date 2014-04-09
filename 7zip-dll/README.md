@@ -1,7 +1,7 @@
 7zip-dll
 ============
 
-This is a MS SQL Server DLL for CLR is a .NET (C#) project which implements string (varchar) archiving using the open-source [SevenZipSharp][7zip] implementation. Vocabulary size 4MB, ultimate compression.
+This is a .NET project in C# (CLR DLL for MS SQL Server) which implements string (varchar) archiving using the open-source [SevenZipSharp][7zip] implementation. Vocabulary size 4MB, ultimate compression.
 
 Installation
 ------------
