@@ -24,10 +24,10 @@ go
 if OBJECT_ID('IsNumeric') is not null drop function IsNumeric
 go
 if OBJECT_ID('_getSchemaByQuery') is not null drop FUNCTION _getSchemaByQuery
-go
-IF OBJECT_ID(N'dbo.RegExOptions') IS NOT NULL DROP FUNCTION dbo.RegExReplace
 GO
 IF OBJECT_ID(N'dbo.RegExOptions') IS NOT NULL DROP FUNCTION dbo.RegExOptions
+GO
+IF OBJECT_ID(N'dbo.RegExReplace') IS NOT NULL DROP FUNCTION dbo.RegExReplace
 GO
 IF OBJECT_ID(N'dbo.RegExSplit') IS NOT NULL DROP FUNCTION dbo.RegExSplit
 GO
