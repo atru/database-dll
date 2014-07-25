@@ -13,7 +13,7 @@ This repo contains the following projects of DLLs for MS SQL:
 
 Compatibility
 ------------
-1. Projects wer created with ShrapDevelop 4.3.1, target framework: .NET 3.5
+1. Projects were created with ShrapDevelop 4.3.1, target framework: .NET 3.5
 1. DLL tested on MS SQL Server 2008R2, MS SQL Server 2012.
 
 [7zip]: http://sevenzipsharp.codeplex.com/
